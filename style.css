@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23200f22' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23401e44' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23602d66' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23803c88' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A04BAA' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000;
+    font-family: Rubik Moonrocks, cursive;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 
+.title {
+    position: absolute;
+    padding: 10px 10px;
+    margin-top: -10px;
+} */
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background-color: rgba(209, 88, 254, 0.436);
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+    font-size: 2.75rem;
+}
+
+.long-quote {
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+    filter: brightness(110%);
+    color: rgb(255, 55, 212);
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+    motion-rotation: auto;
+}
+
+.linkedin-button:hover {
+    color: #38a1f3;
+}
+
+.github-button:hover {
+    color: darkslateblue;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+.header {
+    background-color: rgba(134, 31, 160, 0.595);
+    border-radius: 25px;
+    border-style: inherit;
+    box-shadow: 1px -2px 4px 2px #4d1b75, 5px 5px 10px 1px #000, 5px 5px 10px 1px #000, 5px 5px 10px 1px #000;
+    width: 33%;
+    position: fixed;
+    top: 30px;
+    right: auto;
+    left: auto;
+    color: #f3f3f3;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.footer {
+    padding-top: 0px;
+    background-color: rgba(134, 31, 160, 0.595);
+    border-radius: 25px;
+    border-style: inherit;
+    box-shadow: -6px -3px 20px 6px #7f519f, 5px 5px 10px 1px #000;
+    width: 33%;
+    position: fixed;
+    bottom: 30px;
+    right: auto;
+    left: auto;
+    color: #f3f3f3;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.name {
+    font-style: bold;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.name:hover {
+    color: white;
+}
+
+.logos {
+    padding: 15px 5px;
+}
+
+
+/* Loader */
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid rgb(191, 0, 255);
+    border-right: 16px solid rgb(203, 99, 255);
+    border-bottom: 16px solid rgb(235, 185, 253);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Media Query: Tablet or Smaller */
+
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+    .quote-text {
+        font-size: 2.5rem;
+    }
+}
